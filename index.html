@@ -1808,7 +1808,9 @@ nav {
             const match = link.match(/games\/(\d+)/);
             
             if (match) {
+                
                 const universeId = match[1];
+                alert(universeId)
                 // Add delay to avoid rate limiting
                 setTimeout(() => {
                     fetchGameData(universeId, item);
@@ -1830,5 +1832,6 @@ nav {
 
 </body>
 </html>
+
 
 
