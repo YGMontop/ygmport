@@ -1664,7 +1664,7 @@ nav {
                 throw new Error('Failed to fetch game data');
             }
            
-            const data = await res.json();
+            const data = await response.json();
             //const data = await response.json();
             
             if (data.data && data.data.length > 0) {
@@ -1830,4 +1830,5 @@ nav {
 
 </body>
 </html>
+
 
