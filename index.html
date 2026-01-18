@@ -1659,7 +1659,7 @@ nav {
             playingEl.innerHTML = '<span class="loading-spinner"></span>';
             
             //const response = await fetch(`https://games.roproxy.com/v1/games?universeIds=${universeId}`);
-             const response = await fetch(`/netlify/functions/roblox?ids=${universeId}`);
+             const response = await fetch(`api/roblox?ids=${universeId}`);
             if (!response.ok) {
                 throw new Error('Failed to fetch game data');
             }
@@ -1830,3 +1830,4 @@ nav {
 
 </body>
 </html>
+
