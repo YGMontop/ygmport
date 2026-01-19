@@ -1,73 +1,59 @@
-import fetch from "node-fetch";
+// Function to get Roblox game statistics
+async function getRobloxGameStats(universeId) {
+    try {
+        // Fetch game details
+        const gameResponse = await fetch(https://games.roblox.com/v1/games? universeIds=${universeId});
+        const gameData = await gameResponse.json();
 
-async function getUniverseIdFromPlace(placeId) {
-  console.log(`Fetching universe ID for place ID: ${placeId}`);
-  try {
-    const res = await fetch(`https://www.roblox.com/games/${placeId}`, {
-      headers: { "User-Agent": "Mozilla/5.0" },
-    });
+        if (!gameData. data  gameData.data.length === 0) {
+            throw new Error('Game not found');
+        }
 
-    if (!res.ok) {
-      console.log(`Failed to fetch page for place ID ${placeId}: HTTP ${res.status}`);
-      return null;
+        const game = gameData.data[0];
+
+        // Fetch votes (likes/dislikes)
+        const votesResponse = await fetch(https://games.roblox.com/v1/games/votes?universeIds=${universeId});
+        const votesData = await votesResponse.json();
+        const votes = votesData.data[0]  { upVotes: 0, downVotes: 0 };
+
+        // Fetch thumbnail
+        const thumbnailResponse = await fetch(https://thumbnails.roblox.com/v1/games/icons?universeIds=${universeId}&size=512x512&format=Png&isCircular=false);
+        const thumbnailData = await thumbnailResponse.json();
+        const thumbnail = thumbnailData.data[0]?.imageUrl || '';
+
+        // Return all stats
+        return {
+            name: game.name,
+            description: game.description,
+            creator: game.creator. name,
+            creatorType: game.creator.type,
+            visits: game.visits,
+            favorites: game.favoritedCount,
+            likes: votes.upVotes,
+            dislikes:  votes.downVotes,
+            playing: game.playing,
+            maxPlayers: game.maxPlayers,
+            price: game.price,
+            thumbnail: thumbnail,
+            created: game.created,
+            updated: game.updated
+        };
+
+    } catch (error) {
+        console.error('Error fetching game stats:', error);
+        throw error;
     }
-
-    const html = await res.text();
-    const match = html.match(/"UniverseId":(\d+)/);
-
-    if (!match) {
-      console.log(`Universe ID not found in page for place ID ${placeId}`);
-      return null;
-    }
-
-    const universeId = Number(match[1]);
-    console.log(`Place ID ${placeId} maps to universe ID ${universeId}`);
-    return universeId;
-  } catch (err) {
-    console.log(`Error fetching universe ID for place ID ${placeId}:`, err.message);
-    return null;
-  }
 }
 
-export default async function handler(req, res) {
-  let ids = (req.query.ids || "").split(",").map(s => s.trim()).filter(Boolean);
-  console.log("Received IDs:", ids);
-
-  if (!ids.length) return res.status(400).send("missing ids");
-
-  // Convert all IDs to universe IDs
-  const universeIds = [];
-  for (const id of ids) {
-    const uniId = await getUniverseIdFromPlace(id);
-    if (uniId) universeIds.push(uniId);
-  }
-
-  console.log("Universe IDs to fetch:", universeIds);
-
-  if (!universeIds.length) {
-    console.log("No valid universe IDs found.");
-    return res.status(200).json([]);
-  }
-
-  try {
-    const url = `https://games.roblox.com/v1/games?universeIds=${universeIds.join(",")}`;
-    console.log(`Fetching game data from URL: ${url}`);
-
-    const response = await fetch(url, {
-      headers: { "User-Agent": "Mozilla/5.0" },
-    });
-
-    if (!response.ok) {
-      console.log(`Roblox API responded with HTTP ${response.status}`);
-      throw new Error(`HTTP ${response.status}`);
-    }
-
-    const data = await response.json();
-    console.log("Received game data:", data);
-
-    res.status(200).json(data);
-  } catch (err) {
-    console.log("Error fetching game data:", err.message);
-    res.status(500).json({ error: "Failed to fetch game data", details: err.message });
-  }
-}
+// Example usage:
+getRobloxGameStats(920587237).then(stats => {
+    console.log('Game Name:', stats.name);
+    console.log('Visits:', stats.visits);
+    console.log('Favorites:', stats. favorites);
+    console.log('Likes:', stats.likes);
+    console.log('Dislikes:', stats.dislikes);
+    console.log('Currently Playing:', stats.playing);
+    console.log('Max Players:', stats.maxPlayers);
+    console.log('Creator:', stats.creator);
+    console.log('Full stats:', stats);
+});
