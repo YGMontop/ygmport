@@ -919,6 +919,28 @@
                 <h2>My Portfolio</h2>
                 <p>Explore the Roblox games I've contributed to with scripting and UI design</p>
             </div>
+
+            <!-- NEW: Game Input Section 
+            <div class="game-input-section">
+                <h3 style="margin-bottom: 20px; color: var(--accent);"><i class="fas fa-plus-circle"></i> Add New Game</h3>
+                <div class="game-input-grid">
+                    <div class="input-group">
+                        <label for="gameId">Game ID (Universe ID)</label>
+                        <input type="number" id="gameId" placeholder="e.g., 383310974">
+                    </div>
+                    <div class="input-group">
+                        <label for="gameName">Game Name</label>
+                        <input type="text" id="gameName" placeholder="e.g., My Awesome Game">
+                    </div>
+                    <div class="input-group">
+                        <label for="gameDesc">Your Contribution</label>
+                        <input type="text" id="gameDesc" placeholder="e.g., Scripting & UI Design">
+                    </div>
+                    <button class="add-game-btn" onclick="addGame()">
+                        <i class="fas fa-plus"></i> Add Game
+                    </button>
+                </div>
+            </div>-->
             
             <div class="portfolio-filter">
                 <button class="filter-btn active" onclick="filterPortfolio('all')">All Projects</button>
@@ -927,117 +949,471 @@
             </div>
             
             <div class="portfolio-grid" id="portfolio-grid">
-                <!-- Attempt On Delivery -->
-                <div class="portfolio-item" data-type="scripting">
-                    <div class="portfolio-img">
-                        <img src="https://tr.rbxcdn.com/180DAY-145e03bf04789897c65c352b750b6b85/768/432/Image/Webp/noFilter" alt="Attempt On Delivery">
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Attempt On Delivery</h3>
-                        <p>Scripting some stuff in the Baseplate event</p>
-                        <div class="game-stats-inline">
-                            <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
-                            <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
-                        </div>
-                        <a href="https://www.roblox.com/games/13301445090/Attempt-On-Delivery" target="_blank">
-                            View Game <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Classical Obby -->
-                <div class="portfolio-item" data-type="scripting">
-                    <div class="portfolio-img">
-                        <img src="https://tr.rbxcdn.com/180DAY-a5917f8a7107d31f4112a636e664f88c/768/432/Image/Webp/noFilter" alt="Classical Obby">
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Classical Obby</h3>
-                        <p>Contributed to bug fixing and Scripting a boss fight system</p>
-                        <div class="game-stats-inline">
-                            <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
-                            <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
-                        </div>
-                        <a href="https://www.roblox.com/games/17080639528/Classical-Obby" target="_blank">
-                            View Game <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Grow a Desert -->
-                <div class="portfolio-item" data-type="scripting">
-                    <div class="portfolio-img">
-                        <img src="https://tr.rbxcdn.com/180DAY-d66c4c4ca578a6f6d45f7c84b216cfc5/768/432/Image/Webp/noFilter" alt="Grow a Desert">
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Grow a Desert</h3>
-                        <p>Scripting the gears update and more</p>
-                        <div class="game-stats-inline">
-                            <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
-                            <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
-                        </div>
-                        <a href="https://www.roblox.com/games/135249897634664/Grow-a-Desert" target="_blank">
-                            View Game <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Spiders -->
-                <div class="portfolio-item" data-type="scripting">
-                    <div class="portfolio-img">
-                        <img src="https://tr.rbxcdn.com/180DAY-3a93761837b4b793342a8a7dacb0e551/768/432/Image/Webp/noFilter" alt="Spiders">
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Spiders 🕷️🕸️</h3>
-                        <p>Scripting & Game Mechanics of the entire game</p>
-                        <div class="game-stats-inline">
-                            <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
-                            <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
-                        </div>
-                        <a href="https://www.roblox.com/games/100546488075796" target="_blank">
-                            View Game <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Add more portfolio items here following the same pattern...  -->
-                <!-- I'll add a few more examples -->
-
-                <!-- Rate PS99 Community -->
-                <div class="portfolio-item" data-type="scripting ui">
-                    <div class="portfolio-img">
-                        <img src="https://tr.rbxcdn.com/180DAY-8d7bc5899b9d6544c224530088710fbe/768/432/Image/Webp/noFilter" alt="Rate PS99 Community">
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Rate PS99 Community</h3>
-                        <p>Scripting & UI Design</p>
-                        <div class="game-stats-inline">
-                            <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
-                            <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
-                        </div>
-                        <a href="https://www.roblox.com/games/15778480714/Rate-PS99-Community" target="_blank">
-                            View Game <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Sea Miners -->
-                <div class="portfolio-item" data-type="scripting ui">
-                    <div class="portfolio-img">
-                        <img src="https://tr.rbxcdn.com/180DAY-233f29520aaa223b9a29ea4f701d7666/768/432/Image/Webp/noFilter" alt="Sea Miners">
-                    </div>
-                    <div class="portfolio-info">
-                        <h3>Sea Miners</h3>
-                        <p>Scripting & Game Mechanics of the entire game & UI Design</p>
-                        <div class="game-stats-inline">
-                            <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading... </span></span>
-                            <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
-                        </div>
-                        <a href="https://www.roblox.com/games/13809725768/Sea-Miners" target="_blank">
-                            View Game <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
+    <!-- Attempt On Delivery -->
+    <div class="portfolio-item" data-type="scripting">
+        <div class="portfolio-img">
+            <img src="https://tr.rbxcdn.com/180DAY-e20b7aad005fb74c1be0fe108ed9b207/768/432/Image/Webp/noFilter  " alt="Attempt On Delivery">
+        </div>
+        <div class="portfolio-info">
+            <h3>Attempt On Delivery</h3>
+            <p>Scripting some stuff in the Baseplate event</p>
+            <div class="game-stats-inline">
+                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
+                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
             </div>
+            <a href="https://www.roblox.com/games/13301445090/Attempt-On-Delivery  " target="_blank">
+                View Game <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Classical Obby -->
+    <div class="portfolio-item" data-type="scripting">
+        <div class="portfolio-img">
+            <img src="https://tr.rbxcdn.com/180DAY-a5917f8a7107d31f4112a636e664f88c/768/432/Image/Webp/noFilter  " alt="Classical Obby">
+        </div>
+        <div class="portfolio-info">
+            <h3>Classical Obby</h3>
+            <p>Contributed to bug fixing and Scripting a boss fight system</p>
+            <div class="game-stats-inline">
+                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
+                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
+            </div>
+            <a href="https://www.roblox.com/games/17080639528/Classical-Obby  " target="_blank">
+                View Game <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+
+    <!-- Grow a Desert -->
+    <div class="portfolio-item" data-type="scripting">
+        <div class="portfolio-img">
+            <img src="https://tr.rbxcdn.com/180DAY-d66c4c4ca578a6f6d45f7c84b216cfc5/768/432/Image/Webp/noFilter  " alt="Grow a Desert">
+        </div>
+        <div class="portfolio-info">
+            <h3>Grow a Desert</h3>
+            <p>Scripting the gears update and more</p>
+            <div class="game-stats-inline">
+                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
+                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
+            </div>
+            <a href="https://www.roblox.com/games/135249897634664/Grow-a-Desert  " target="_blank">
+                View Game <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Spiders -->
+    <div class="portfolio-item" data-type="scripting">
+        <div class="portfolio-img">
+            <img src="https://tr.rbxcdn.com/180DAY-c6a0434be707e46616d53711f057a796/768/432/Image/Webp/noFilter  " alt="Spiders">
+        </div>
+        <div class="portfolio-info">
+            <h3>Spiders 🕷️🕸️</h3>
+            <p>Scripting & Game Mechanics of the entire game</p>
+            <div class="game-stats-inline">
+                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
+                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
+            </div>
+            <a href="https://www.roblox.com/games/100546488075796  " target="_blank">
+                View Game <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- 99 Nights in the Forest Thieves -->
+    <div class="portfolio-item" data-type="scripting">
+        <div class="portfolio-img">
+            <img src="https://tr.rbxcdn.com/180DAY-8dddc6ab80ac79e14a7ebe2aa003c5e5/768/432/Image/Webp/noFilter  " alt="99 Nights in the Forest Thieves">
+        </div>
+        <div class="portfolio-info">
+            <h3>99 Nights in the Forest Thieves</h3>
+            <p>Scripting and instalizing the system</p>
+            <div class="game-stats-inline">
+                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
+                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
+            </div>
+            <a href="https://www.roblox.com/games/114583749499494  " target="_blank">
+                View Game <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Steal a cartoon -->
+    <div class="portfolio-item" data-type="scripting">
+        <div class="portfolio-img">
+            <img src="https://tr.rbxcdn.com/180DAY-cc4394bb96813252608e9045e7c38abe/768/432/Image/Webp/noFilter  " alt="Steal a cartoon">
+        </div>
+        <div class="portfolio-info">
+            <h3>Steal a cartoon</h3>
+            <p>Scripting and instalizing the system</p>
+            <div class="game-stats-inline">
+                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
+                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
+            </div>
+            <a href="https://www.roblox.com/games/137253865256902  " target="_blank">
+                View Game <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+    
+ <!-- Steal a Mochi -->
+    <div class="portfolio-item" data-type="scripting">
+        <div class="portfolio-img">
+            <img src="https://tr.rbxcdn.com/180DAY-417a12ab4952735a7062535093fc6f49/768/432/Image/Webp/noFilter  " alt="Steal a Mochi">
+        </div>
+        <div class="portfolio-info">
+            <h3>Steal a Mochi</h3>
+            <p>Scripting and bug fixing</p>
+            <div class="game-stats-inline">
+                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
+                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
+            </div>
+            <a href="https://www.roblox.com/games/118343337877640  " target="_blank">
+                View Game <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Escape From Prison -->
+    <div class="portfolio-item" data-type="scripting">
+        <div class="portfolio-img">
+            <img src="https://tr.rbxcdn.com/180DAY-83bb8a4dd7977b97d04cedb0e627fe74/768/432/Image/Webp/noFilter  " alt="Escape From Prison">
+        </div>
+        <div class="portfolio-info">
+            <h3>Escape From Prison</h3>
+            <p>Scripting and Bug fixing and improving stats</p>
+            <div class="game-stats-inline">
+                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
+                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
+            </div>
+            <a href="https://www.roblox.com/games/104838711764299/  " target="_blank">
+                View Game <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Jetpack Troll Tower -->
+    <div class="portfolio-item" data-type="scripting">
+        <div class="portfolio-img">
+            <img src="https://tr.rbxcdn.com/180DAY-2347b554d91ccc043e3991c07438ff05/768/432/Image/Webp/noFilter  " alt="Jetpack Troll Tower">
+        </div>
+        <div class="portfolio-info">
+            <h3>Jetpack Troll Tower</h3>
+            <p>Scripting and instalizing the system</p>
+            <div class="game-stats-inline">
+                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
+                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
+            </div>
+            <a href="https://www.roblox.com/games/80181633679651  " target="_blank">
+                View Game <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Limited Factory Tycoon -->
+    <div class="portfolio-item" data-type="scripting">
+        <div class="portfolio-img">
+            <img src="https://tr.rbxcdn.com/180DAY-a9ca3921f21dceed513fc072166d24e1/768/432/Image/Webp/noFilter  " alt="Limited Factory Tycoon">
+        </div>
+        <div class="portfolio-info">
+            <h3>Limited Factory Tycoon</h3>
+            <p>Scripting & Bug fixing</p>
+            <div class="game-stats-inline">
+                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
+                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
+            </div>
+            <a href="https://www.roblox.com/games/109798817580185/Limited-Factory-Tycoon  " target="_blank">
+                View Game <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- The Baseplate -->
+    <div class="portfolio-item" data-type="scripting">
+        <div class="portfolio-img">
+            <img src="https://tr.rbxcdn.com/180DAY-07a12a775627b48b281307da6b556d23/768/432/Image/Webp/noFilter  " alt="The Baseplate">
+        </div>
+        <div class="portfolio-info">
+            <h3>The Baseplate</h3>
+            <p>Contributed to Scripting</p>
+            <div class="game-stats-inline">
+                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
+                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
+            </div>
+            <a href="https://www.roblox.com/games/94868599454963/The-Baseplate  " target="_blank">
+                View Game <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Rate PS99 Community -->
+    <div class="portfolio-item" data-type="scripting ui">
+        <div class="portfolio-img">
+            <img src="https://tr.rbxcdn.com/180DAY-8d7bc5899b9d6544c224530088710fbe/768/432/Image/Webp/noFilter  " alt="Rate PS99 Community">
+        </div>
+        <div class="portfolio-info">
+            <h3>Rate PS99 Community</h3>
+            <p>Scripting & UI Design</p>
+            <div class="game-stats-inline">
+                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
+                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
+            </div>
+            <a href="https://www.roblox.com/games/15778480714/Rate-PS99-Community  " target="_blank">
+                View Game <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Climb for Admin -->
+    <div class="portfolio-item" data-type="scripting ui">
+        <div class="portfolio-img">
+            <img src="https://tr.rbxcdn.com/180DAY-12c7d856440403a6b2b877ac35f37557/768/432/Image/Webp/noFilter  " alt="Climb for Admin">
+        </div>
+        <div class="portfolio-info">
+            <h3>Climb for Admin</h3>
+            <p>Scripting & Game Mechanics of the entire game & UI Design</p>
+            <div class="game-stats-inline">
+                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
+                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
+            </div>
+            <a href="https://www.roblox.com/games/127787079237775/Climb-for-Admin  " target="_blank">
+                View Game <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Clean Up Pet Sim X -->
+    <div class="portfolio-item" data-type="scripting">
+        <div class="portfolio-img">
+            <img src="https://t0.rbxcdn.com/180DAY-3ee43b8811a96790abd50ff0ada3c6de  " alt="Clean Up Pet Sim X Community">
+        </div>
+        <div class="portfolio-info">
+            <h3>Clean Up Pet Sim X</h3>
+            <p>Scripting</p>
+            <div class="game-stats-inline">
+                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
+                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
+            </div>
+            <a href="https://www.roblox.com/games/13389245649/clean-up-pet-sim-x-community  " target="_blank">
+                View Game <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Mini-jeux Funiverse -->
+    <div class="portfolio-item" data-type="scripting">
+        <div class="portfolio-img">
+            <img src="https://tr.rbxcdn.com/180DAY-cf82ff6c5fd448d773964e19756d7cff/768/432/Image/Webp/noFilter  " alt="Mini-jeux Funiverse">
+        </div>
+        <div class="portfolio-info">
+            <h3>Mini-jeux Funiverse</h3>
+            <p>Quest system Scripting and Bug Fixing</p>
+            <div class="game-stats-inline">
+                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
+                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
+            </div>
+            <a href="https://www.roblox.com/games/123903036390298/Mini-jeux-Funiverse-play-and-win-ugc  " target="_blank">
+                View Game <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Sea Miners -->
+    <div class="portfolio-item" data-type="scripting ui">
+        <div class="portfolio-img">
+            <img src="https://tr.rbxcdn.com/180DAY-233f29520aaa223b9a29ea4f701d7666/768/432/Image/Webp/noFilter  " alt="Sea Miners">
+        </div>
+        <div class="portfolio-info">
+            <h3>Sea Miners</h3>
+            <p>Scripting & Game Mechanics of the entire game & UI Design</p>
+            <div class="game-stats-inline">
+                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
+                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
+            </div>
+            <a href="https://www.roblox.com/games/13809725768/Sea-Miners  " target="_blank">
+                View Game <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- VOICE CHAT DreamVibe -->
+    <div class="portfolio-item" data-type="scripting">
+        <div class="portfolio-img">
+            <img src="https://tr.rbxcdn.com/180DAY-f8da47332d209c12f15e65fc63ae73d0/768/432/Image/Webp/noFilter  " alt="VOICE CHAT DreamVibe">
+        </div>
+        <div class="portfolio-info">
+            <h3>VOICE CHAT DreamVibe</h3>
+            <p>Some Scripting and bug fixing</p>
+            <div class="game-stats-inline">
+                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
+                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
+            </div>
+            <a href="https://www.roblox.com/games/8526672149/VOICE-CHAT-DreamVibe-Beta-V-1  " target="_blank">
+                View Game <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Find All RedNoobs -->
+    <div class="portfolio-item" data-type="scripting">
+        <div class="portfolio-img">
+            <img src="https://tr.rbxcdn.com/180DAY-dd939b1be9f8778f5f02b1341dfc7c3e/768/432/Image/Webp/noFilter  " alt="Find All RedNoobs">
+        </div>
+        <div class="portfolio-info">
+            <h3>Find All RedNoobs</h3>
+            <p>Scripting Main game system</p>
+            <div class="game-stats-inline">
+                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
+                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
+            </div>
+            <a href="https://www.roblox.com/games/115356499725157/CLOSED-Find-All-RedNoobs-Ugc  " target="_blank">
+                View Game <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Be a Painter -->
+    <div class="portfolio-item" data-type="scripting">
+        <div class="portfolio-img">
+            <img src="https://i.ytimg.com/vi/toCAYmviMB0/maxresdefault.jpg  " alt="Be a Painter">
+        </div>
+        <div class="portfolio-info">
+            <h3>Be a Painter</h3>
+            <p>Scripting the Crates System and fixing some bugs</p>
+            <div class="game-stats-inline">
+                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
+                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
+            </div>
+            <a href="https://www.roblox.com/games/124320681836428/Be-a-Painter  " target="_blank">
+                View Game <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Donation World -->
+    <div class="portfolio-item" data-type="scripting">
+        <div class="portfolio-img">
+            <img src="https://tr.rbxcdn.com/180DAY-e957133f4d2f56d9b472db3f194c7837/768/432/Image/Webp/noFilter  " alt="Donation World" >
+        </div>
+        <div class="portfolio-info">
+            <h3>Donation World</h3>
+            <p>Scripting the entire game</p>
+            <div class="game-stats-inline">
+                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
+                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
+            </div>
+            <a href="https://www.roblox.com/games/120818703728828/Donation-World  " target="_blank">
+                View Game <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Squid Obbies! 🎵 -->
+    <div class="portfolio-item" data-type="scripting">
+        <div class="portfolio-img">
+            <img src="https://i.ytimg.com/vi/toCAYmviMB0/maxresdefault.jpg  " alt="Squid Obbies">
+        </div>
+        <div class="portfolio-info">
+            <h3>Squid Obbies! 🎵</h3>
+            <p>Scripting the entire game</p>
+            <div class="game-stats-inline">
+                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
+                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
+            </div>
+            <a href="https://www.roblox.com/games/72276909673765/Squid-Obbies-Beta-Test  " target="_blank">
+                View Game <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Bubble Gum Survival -->
+    <div class="portfolio-item" data-type="scripting">
+        <div class="portfolio-img">
+            <img src="https://tr.rbxcdn.com/180DAY-7429e92f31db9f6b78946f5c9a2a5f27/768/432/Image/Webp/noFilter  " alt="Bubble Gum Survival">
+        </div>
+        <div class="portfolio-info">
+            <h3>Bubble Gum Survival</h3>
+            <p>Scripting almost the entire game</p>
+            <div class="game-stats-inline">
+                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
+                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
+            </div>
+            <a href="https://www.roblox.com/games/18360397885/NEW-Bubble-Gum-Survival  " target="_blank">
+                View Game <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Obby Vs Snipers -->
+    <div class="portfolio-item" data-type="scripting">
+        <div class="portfolio-img">
+            <img src="https://tr.rbxcdn.com/180DAY-e6f2ac52922379d743dcdede113c3689/768/432/Image/Webp/noFilter  " alt="Obby Vs Snipers">
+        </div>
+        <div class="portfolio-info">
+            <h3>Obby vs snipers</h3>
+            <p>Scripting</p>
+            <div class="game-stats-inline">
+                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
+                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
+            </div>
+            <a href="https://www.roblox.com/games/100388035033319  " target="_blank">
+                View Game <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Farting Simulator -->
+    <div class="portfolio-item" data-type="scripting">
+        <div class="portfolio-img">
+            <img src="https://tr.rbxcdn.com/180DAY-bb220e9e342ab567e294acff598eeab3/768/432/Image/Webp/noFilter  " alt="Farting Simulator">
+        </div>
+        <div class="portfolio-info">
+            <h3>Farting simulator</h3>
+            <p>Scripting features and bug fixes to an egg system </p>
+            <div class="game-stats-inline">
+                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
+                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
+            </div>
+            <a href="https://www.roblox.com/games/17401167982/Farting-Simulator  " target="_blank">
+                View Game <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Pet Clickers -->
+    <div class="portfolio-item" data-type="scripting">
+        <div class="portfolio-img">
+            <img src="https://tr.rbxcdn.com/180DAY-288b9d8f87a43d68c0240aeb50975160/768/432/Image/Webp/noFilter  " alt="Pet Clickers">
+        </div>
+        <div class="portfolio-info">
+            <h3>Pet Clickers</h3>
+            <p>Scripting</p>
+            <div class="game-stats-inline">
+                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
+                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
+            </div>
+            <a href="https://www.roblox.com/games/124112380363426/Pet-Clickers  " target="_blank">
+                View Game <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Game Hub -->
+    <div class="portfolio-item" data-type="scripting">
+        <div class="portfolio-img">
+            <img src="https://tr.rbxcdn.com/180DAY-8a1c013fb0bad48349925a754b4b2d2e/768/432/Image/Webp/noFilter  " alt="Game Hub">
+        </div>
+        <div class="portfolio-info">
+            <h3>Game Hub</h3>
+            <p>Scripting the entierety of the main game functionality</p>
+            <div class="game-stats-inline">
+                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
+                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
+            </div>
+            <a href="https://www.roblox.com/games/116244414212985/Game-Hub  " target="_blank">
+                View Game <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
         </div>
     </section>
 
@@ -1280,3 +1656,4 @@
     </script>
 </body>
 </html>
+
