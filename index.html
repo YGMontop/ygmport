@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+<! DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YGM's Portfolio</title>
-    <link rel="icon" type="image/png" href="/Assets/pfp.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css  ">
+    <link rel="icon" type="image/png" href="Assets/pfp.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root {
-            --primary: #4A6FFF;
+        : root {
+            --primary:  #4A6FFF;
             --primary-dark: #3A5AD9;
             --secondary: #FF6B6B;
             --accent: #4ECDC4;
@@ -20,13 +20,13 @@
         
         * {
             margin: 0;
-            padding: 0;
+            padding:  0;
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         
         body {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            background:  linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
             color: var(--light);
             line-height: 1.6;
             overflow-x: hidden;
@@ -35,7 +35,7 @@
         .container {
             width: 90%;
             max-width: 1200px;
-            margin: 0 auto;
+            margin:  0 auto;
             padding: 0 15px;
         }
         
@@ -53,7 +53,7 @@
         nav {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items:  center;
             padding: 20px 0;
         }
         
@@ -62,7 +62,7 @@
             align-items: center;
             gap: 10px;
             font-weight: 700;
-            font-size: 1.5rem;
+            font-size:  1.5rem;
             color: var(--light);
             text-decoration: none;
         }
@@ -94,7 +94,7 @@
             color: var(--accent);
         }
         
-        .nav-links a::after {
+        . nav-links a:: after {
             content: '';
             position: absolute;
             bottom: 0;
@@ -119,13 +119,13 @@
             overflow: hidden;
         }
         
-        .hero::before {
+        .hero:: before {
             content: '';
             position: absolute;
             top: 0;
-            left: 0;
+            left:  0;
             width: 100%;
-            height: 100%;
+            height:  100%;
             background: radial-gradient(circle at 10% 20%, rgba(74, 111, 255, 0.1) 0%, rgba(26, 26, 46, 0) 40%);
             z-index: -1;
         }
@@ -152,21 +152,21 @@
         .hero-img img {
             width: 300px;
             height: 300px;
-            border-radius: 50%;
+            border-radius:  50%;
             object-fit: cover;
             border: 5px solid var(--primary);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
         
         .tagline {
-            font-size: 1.1rem;
+            font-size:  1.1rem;
             color: var(--accent);
             margin-bottom: 15px;
             font-weight: 600;
         }
         
         h1 {
-            font-size: 3.5rem;
+            font-size: 3. 5rem;
             margin-bottom: 20px;
             line-height: 1.2;
         }
@@ -177,7 +177,7 @@
         
         .hero p {
             font-size: 1.2rem;
-            margin-bottom: 30px;
+            margin-bottom:  30px;
             max-width: 600px;
         }
         
@@ -185,22 +185,22 @@
             display: inline-block;
             background: var(--primary);
             color: white;
-            padding: 12px 30px;
+            padding:  12px 30px;
             border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
+            text-decoration:  none;
+            font-weight:  600;
             transition: var(--transition);
-            border: 2px solid var(--primary);
+            border:  2px solid var(--primary);
             cursor: pointer;
         }
         
         .btn:hover {
             background: transparent;
             transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(74, 111, 255, 0.3);
+            box-shadow:  0 10px 20px rgba(74, 111, 255, 0.3);
         }
         
-        .btn-secondary {
+        . btn-secondary {
             background: transparent;
             border-color: var(--accent);
             color: var(--accent);
@@ -231,7 +231,7 @@
         }
         
         .section-header h2::after {
-            content: '';
+            content:  '';
             position: absolute;
             bottom: -10px;
             left: 50%;
@@ -242,7 +242,7 @@
             border-radius: 2px;
         }
         
-        .section-header p {
+        . section-header p {
             max-width: 700px;
             margin: 20px auto 0;
             color: var(--gray);
@@ -266,7 +266,7 @@
         
         .about-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            box-shadow:  0 15px 30px rgba(0, 0, 0, 0.3);
             border-color: rgba(74, 111, 255, 0.3);
         }
         
@@ -301,7 +301,7 @@
             color: var(--primary);
             padding: 5px 15px;
             border-radius: 20px;
-            font-size: 0.9rem;
+            font-size:  0.9rem;
             font-weight: 500;
         }
         
@@ -311,7 +311,7 @@
             justify-content: center;
             flex-wrap: wrap;
             gap: 15px;
-            margin-bottom: 40px;
+            margin-bottom:  40px;
         }
         
         .filter-btn {
@@ -319,7 +319,7 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
             color: var(--light);
             padding: 8px 20px;
-            border-radius: 30px;
+            border-radius:  30px;
             cursor: pointer;
             transition: var(--transition);
         }
@@ -330,7 +330,7 @@
         
         .portfolio-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns:  repeat(auto-fill, minmax(300px, 1fr));
             gap: 30px;
         }
         
@@ -344,7 +344,7 @@
         
         .portfolio-item:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            box-shadow:  0 15px 30px rgba(0, 0, 0, 0.3);
             border-color: rgba(74, 111, 255, 0.3);
         }
         
@@ -372,7 +372,7 @@
         
         .portfolio-info h3 {
             font-size: 1.3rem;
-            margin-bottom: 10px;
+            margin-bottom:  10px;
         }
         
         .portfolio-info p {
@@ -381,9 +381,9 @@
             margin-bottom: 15px;
         }
         
-        .portfolio-info a {
+        . portfolio-info a {
             color: var(--accent);
-            text-decoration: none;
+            text-decoration:  none;
             font-weight: 500;
             display: flex;
             align-items: center;
@@ -427,13 +427,13 @@
         }
         
         .contact-text h4 {
-            font-size: 1.2rem;
-            margin-bottom: 5px;
+            font-size:  1.2rem;
+            margin-bottom:  5px;
         }
         
         .contact-text a {
             color: var(--accent);
-            text-decoration: none;
+            text-decoration:  none;
             transition: var(--transition);
         }
         
@@ -459,50 +459,15 @@
             border-radius: 50%;
             transition: var(--transition);
         }
+
+        .social-link img {
+            width: 24px;
+            height: 24px;
+        }
         
         .social-link:hover {
             background: var(--primary);
             transform: translateY(-5px);
-        }
-        
-        .contact-form {
-            background: rgba(26, 26, 46, 0.7);
-            border-radius: 15px;
-            padding: 30px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        .form-group {
-            margin-bottom: 20px;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
-        }
-        
-        .form-control {
-            width: 100%;
-            padding: 12px 15px;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            color: var(--light);
-            font-size: 1rem;
-            transition: var(--transition);
-        }
-        
-        .form-control:focus {
-            outline: none;
-            border-color: var(--primary);
-            background: rgba(26, 26, 46, 0.9);
-        }
-        
-        textarea.form-control {
-            min-height: 150px;
-            resize: vertical;
         }
         
         /* Footer */
@@ -536,157 +501,150 @@
             border-radius: 50%;
             object-fit: cover;
         }
+
         /* Groups Section */
-.groups-grid {
-    display: flex; /* Use flex to control the row and wrapping */
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-}
+        .groups-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
 
-.group-card {
-    /* Base Card Style */
-    flex: 0 0 calc(50% - 15px); /* Max 2 per row on large screens */
-    max-width: 500px;
-    background: rgba(26, 26, 46, 0.9);
-    border-radius: 15px;
-    padding: 30px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: var(--transition);
-    text-decoration: none;
-    color: var(--light);
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    text-align: left;
-}
+        .group-card {
+            flex: 0 0 calc(50% - 15px);
+            max-width: 500px;
+            background: rgba(26, 26, 46, 0.9);
+            border-radius: 15px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: var(--transition);
+            text-decoration: none;
+            color: var(--light);
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            text-align: left;
+        }
 
-.group-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-    border-color: var(--primary);
-}
+        .group-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            border-color: var(--primary);
+        }
 
-.group-logo {
-    width: 100px;
-    height: 100px;
-    border-radius: 10px; /* Use square corners as in the image */
-    object-fit: cover;
-    border: 3px solid var(--accent);
-    flex-shrink: 0;
-}
+        .group-logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            object-fit: cover;
+            border: 3px solid var(--accent);
+            flex-shrink: 0;
+        }
 
-.group-info {
-    flex-grow: 1;
-}
+        .group-info {
+            flex-grow: 1;
+        }
 
-.group-info h3 {
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-    color: var(--light);
-}
+        .group-info h3 {
+            font-size: 1.5rem;
+            margin-bottom:  5px;
+            color: var(--light);
+        }
 
-.group-info p {
-    font-size: 0.95rem;
-    color: var(--gray);
-    margin-bottom: 15px;
-}
+        .group-info p {
+            font-size: 0.95rem;
+            color: var(--gray);
+            margin-bottom: 15px;
+        }
 
-.group-stats {
-    display: flex;
-    justify-content: space-between; /* Space out the member count and button */
-    align-items: center;
-    margin-top: 15px;
-    padding-top: 15px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
+        . group-stats {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
 
-.group-stat-item {
-    display: flex;
-    flex-direction: column;
-}
+        .group-stat-item {
+            display: flex;
+            flex-direction: column;
+        }
 
-.group-stat-item strong {
-    font-size: 1.8rem;
-    color: var(--accent);
-    line-height: 1;
-}
+        .group-stat-item strong {
+            font-size: 1.8rem;
+            color: var(--accent);
+            line-height: 1;
+        }
 
-.group-stat-item span {
-    font-size: 0.8rem;
-    color: var(--gray);
-    text-transform: uppercase;
-    font-weight: 500;
-}
+        .group-stat-item span {
+            font-size: 0.8rem;
+            color: var(--gray);
+            text-transform: uppercase;
+            font-weight: 500;
+        }
 
-.group-show-btn {
-    /* Reusing .btn styles for a familiar look */
-    background: var(--primary);
-    color: white;
-    padding: 10px 20px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: var(--transition);
-    border: none;
-    cursor: pointer;
-    font-size: 0.9rem;
-}
+        .group-show-btn {
+            background: var(--primary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
 
-.group-show-btn:hover {
-    background: var(--primary-dark);
-    transform: scale(1.05);
-}
+        .group-show-btn:hover {
+            background: var(--primary-dark);
+            transform: scale(1.05);
+        }
 
-@media (max-width: 900px) {
-    .group-card {
-        flex: 0 0 100%; /* Single column layout on smaller screens */
-    }
-}
-        /* Game Stats Counters Style */
-.game-stats {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    /*margin-right: auto;  /*Pushes the stats to the center-left */
-}
+        . verified-icon {
+            color: #1DA1F2;
+            margin-left: 6px;
+        }
 
-.stat-item {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--light);
-}
-
-.stat-item i {
-    color: var(--accent); /* Color for the icons */
-    font-size: 1.2rem;
-}
-
-.stat-label {
-    font-size: 0.9rem;
-    font-weight: 400;
-    color: var(--gray);
-}
-
-/* Adjusted nav to handle the new element */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-}
-.verified-icon {
-    color: #1DA1F2; /* Twitter-like blue */
-    margin-left: 6px;
-  }
-
-        .copyright {
+        . copyright {
             color: var(--gray);
             font-size: 0.9rem;
+        }
+
+        /* Game Stats */
+        .game-stats-inline {
+            display: flex;
+            gap: 15px;
+            margin-top:  10px;
+            font-size: 0.85rem;
+        }
+
+        . stat-inline {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: var(--accent);
+        }
+
+        .loading-spinner {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border: 2px solid rgba(255,255,255,. 3);
+            border-radius: 50%;
+            border-top-color: var(--accent);
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        . error-text {
+            color: #ff6b6b;
+            font-size: 0.8rem;
         }
         
         /* Responsive */
@@ -707,6 +665,12 @@ nav {
             }
         }
         
+        @media (max-width: 900px) {
+            .group-card {
+                flex:  0 0 100%;
+            }
+        }
+        
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
@@ -720,105 +684,6 @@ nav {
                 font-size: 2rem;
             }
         }
-
-        /* NEW: Game Input Section */
-        .game-input-section {
-            background: rgba(26, 26, 46, 0.7);
-            border-radius: 15px;
-            padding: 30px;
-            margin-bottom: 40px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .game-input-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr auto;
-            gap: 15px;
-            align-items: end;
-        }
-
-        @media (max-width: 768px) {
-            .game-input-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .input-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
-            color: var(--light);
-        }
-
-        .input-group input, .input-group textarea {
-            width: 100%;
-            padding: 12px 15px;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
-            color: var(--light);
-            font-size: 1rem;
-            transition: var(--transition);
-        }
-
-        .input-group input:focus, .input-group textarea:focus {
-            outline: none;
-            border-color: var(--primary);
-            background: rgba(26, 26, 46, 0.9);
-        }
-
-        .add-game-btn {
-            background: var(--accent);
-            color: var(--dark);
-            border: none;
-            padding: 12px 25px;
-            border-radius: 8px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: var(--transition);
-            height: fit-content;
-        }
-
-        .add-game-btn:hover {
-            background: var(--primary);
-            color: white;
-            transform: translateY(-2px);
-        }
-
-        /* NEW: Stats display in cards */
-        .game-stats-inline {
-            display: flex;
-            gap: 15px;
-            margin-top: 10px;
-            font-size: 0.85rem;
-        }
-
-        .stat-inline {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            color: var(--accent);
-        }
-
-        .loading-spinner {
-            display: inline-block;
-            width: 12px;
-            height: 12px;
-            border: 2px solid rgba(255,255,255,.3);
-            border-radius: 50%;
-            border-top-color: var(--accent);
-            animation: spin 1s ease-in-out infinite;
-        }
-
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-
-        .error-text {
-            color: #ff6b6b;
-            font-size: 0.8rem;
-        }
     </style>
 </head>
 
@@ -828,24 +693,9 @@ nav {
         <div class="container">
             <nav>
                 <a href="#" class="logo">
-        <img src="/Assets/pfp.png" alt="YGMDev" class="logo-img">
-        <span>YGMDev </span>
-    </a>
-
-    <!--<div class="game-stats">
-        <div class="stat-item">
-            <i class="fas fa-users"></i>
-            <span id="ccu-counter">0</span>
-            <span class="stat-label">CCU</span>
-        </div>
-        <div class="stat-item">
-            <i class="fas fa-eye"></i>
-            <span id="visits-counter">0</span>
-            <span class="stat-label">Visits</span>
-        </div>
-    </div>-->
-    <ul class="nav-links">
-        </ul>
+                    <img src="Assets/pfp.png" alt="YGMDev" class="logo-img">
+                    <span>YGMDev</span>
+                </a>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -864,18 +714,17 @@ nav {
                 <div class="hero-text">
                     <p class="tagline">Professional Roblox Scripter & Beginner Modeler</p>
                     <h1>Transforming <span>Your Idea</span> into <span>A Reality</span></h1>
-                    <p>With over 5 years of scripting experience, I create fun Roblox games that captivate players and deliver exceptional experiences.</p>
+                    <p>With over 5 years of scripting experience, I create fun Roblox games that captivate players and deliver exceptional experiences. </p>
                     <div class="hero-btns">
                         <a href="#portfolio" class="btn">View My Work</a>
                         <a href="#contact" class="btn btn-secondary">Hire Me</a>
                     </div>
                 </div>
                 <div class="hero-img">
-                    <img src="/Assets/pfp.png" alt="YGMDev">
+                    <img src="Assets/pfp.png" alt="YGMDev">
                 </div>
             </div>
         </div>
-        
     </section>
 
     <!-- About Section -->
@@ -895,7 +744,7 @@ nav {
                 
                 <div class="about-card">
                     <h3><i class="fas fa-cogs"></i> Expertise</h3>
-                    <p>My core competencies include:</p>
+                    <p>My core competencies include: </p>
                     <ul>
                         <li>Reading and understanding existing scripts</li>
                         <li>Creating custom scripts from scratch</li>
@@ -916,12 +765,12 @@ nav {
                 
                 <div class="about-card">
                     <h3><i class="fas fa-clipboard-check"></i> Commitment</h3>
-                    <p><strong>Fast Delivery:</strong> I prioritize efficiency without compromising quality.</p>
+                    <p><strong>Fast Delivery:</strong> I prioritize efficiency without compromising quality. </p>
                     <p><strong>Trustworthy:</strong> Clear communication and reliable service.</p>
                     <p><strong>Support:</strong> 1-week post-delivery support for any issues.</p>
                     
                     <h3 style="margin-top: 20px;"><i class="fas fa-money-bill-wave"></i> Payment</h3>
-                    <p>Preferred payment methods:</p>
+                    <p>Preferred payment methods: </p>
                     <ul>
                         <li>Gamepasses</li>
                         <li>Group Payouts</li>
@@ -932,137 +781,136 @@ nav {
         </div>
     </section>
 
+    <!-- Groups Section -->
     <section id="groups" class="groups">
-    <div class="container">
-        <div class="section-header">
-            <h2>Groups I've Worked With</h2>
-            <p>A few of the amazing teams and communities I have had the pleasure of contributing to.</p>
-        </div>
-        
-        <div class="groups-grid">
+        <div class="container">
+            <div class="section-header">
+                <h2>Groups I've Worked With</h2>
+                <p>A few of the amazing teams and communities I have had the pleasure of contributing to. </p>
+            </div>
             
-            <div class="group-card">
-                <img src="https://tr.rbxcdn.com/180DAY-ddc057360990ba42f53a982cd5aeef45/150/150/Image/Webp/noFilter  " alt="" class="group-logo">
-                <div class="group-info">
-                    <h3>Arch Studios 3.0 <i class="fa-solid fa-circle-check verified-icon"></i></h3>
-                    <p>We make Games!</p>
-                    <div class="group-stats">
-                        <div class="group-stat-item">
-                            <strong>736K+</strong>
-                            <span>Members</span>
+            <div class="groups-grid">
+                <div class="group-card">
+                    <img src="https://tr.rbxcdn.com/180DAY-ddc057360990ba42f53a982cd5aeef45/150/150/Image/Webp/noFilter" alt="" class="group-logo">
+                    <div class="group-info">
+                        <h3>Arch Studios 3. 0 <i class="fa-solid fa-circle-check verified-icon"></i></h3>
+                        <p>We make Games!</p>
+                        <div class="group-stats">
+                            <div class="group-stat-item">
+                                <strong>736K+</strong>
+                                <span>Members</span>
+                            </div>
+                            <a href="https://www.roblox.com/communities/13104578" target="_blank" class="group-show-btn">
+                                Show Group
+                            </a>
                         </div>
-                        <a href="https://www.roblox.com/communities/13104578  " target="_blank" class="group-show-btn">
-                            Show Group
-                        </a>
+                    </div>
+                </div>
+
+                <div class="group-card">
+                    <img src="https://tr.rbxcdn.com/180DAY-0ccd1f84d4c2f3be42e26e341ad81e44/150/150/Image/Webp/noFilter" alt="" class="group-logo">
+                    <div class="group-info">
+                        <h3>Purple Corporation Group! </h3>
+                        <p>The official group of Purple Corporation! </p>
+                        <div class="group-stats">
+                            <div class="group-stat-item">
+                                <strong>52K+</strong>
+                                <span>Members</span>
+                            </div>
+                            <a href="https://www.roblox.com/communities/11923821" target="_blank" class="group-show-btn">
+                                Show Group
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group-card">
+                    <img src="https://tr.rbxcdn.com/180DAY-995f5eb345254ea2a1988c25216a536f/150/150/Image/Webp/noFilter" alt="" class="group-logo">
+                    <div class="group-info">
+                        <h3>Incredibles Favorites</h3>
+                        <p>Creating incredible experiences, delivering excitement straight to your door!</p>
+                        <div class="group-stats">
+                            <div class="group-stat-item">
+                                <strong>23K+</strong>
+                                <span>Members</span>
+                            </div>
+                            <a href="https://www.roblox.com/communities/17143662" target="_blank" class="group-show-btn">
+                                Show Group
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group-card">
+                    <img src="https://tr.rbxcdn.com/180DAY-293904a5cd73b916718101c87263a124/150/150/Image/Webp/noFilter" alt="" class="group-logo">
+                    <div class="group-info">
+                        <h3>EpicX Development</h3>
+                        <p>Join our group and unlock exclusive in-game rewards!  🎮</p>
+                        <div class="group-stats">
+                            <div class="group-stat-item">
+                                <strong>8.7K+</strong>
+                                <span>Members</span>
+                            </div>
+                            <a href="https://www.roblox.com/communities/34756978" target="_blank" class="group-show-btn">
+                                Show Group
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group-card">
+                    <img src="https://tr.rbxcdn.com/180DAY-ccf4029e992d36b4eef88fa5aecef616/150/150/Image/Webp/noFilter" alt="" class="group-logo">
+                    <div class="group-info">
+                        <h3>Gopala Games</h3>
+                        <p>No bio yet! </p>
+                        <div class="group-stats">
+                            <div class="group-stat-item">
+                                <strong>5.9K+</strong>
+                                <span>Members</span>
+                            </div>
+                            <a href="https://www.roblox.com/communities/35624634" target="_blank" class="group-show-btn">
+                                Show Group
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group-card">
+                    <img src="https://tr.rbxcdn.com/180DAY-0ee2aac0facc2a1dd6ab5161f3c8c523/150/150/Image/Webp/noFilter" alt="" class="group-logo">
+                    <div class="group-info">
+                        <h3>Kryptide Games</h3>
+                        <p>where da magic happen</p>
+                        <div class="group-stats">
+                            <div class="group-stat-item">
+                                <strong>5.9K+</strong>
+                                <span>Members</span>
+                            </div>
+                            <a href="https://www.roblox.com/communities/32402468" target="_blank" class="group-show-btn">
+                                Show Group
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group-card">
+                    <img src="https://tr.rbxcdn.com/180DAY-e4975f67f49e5d8bcc7dc27e5e8829bc/150/150/Image/Webp/noFilter" alt="" class="group-logo">
+                    <div class="group-info">
+                        <h3>Games For Fun</h3>
+                        <p>join our communication server to report any bugs or give suggestions! </p>
+                        <div class="group-stats">
+                            <div class="group-stat-item">
+                                <strong>5.8K+</strong>
+                                <span>Members</span>
+                            </div>
+                            <a href="https://www.roblox.com/communities/34433530" target="_blank" class="group-show-btn">
+                                Show Group
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-
-             <div class="group-card">
-                <img src="https://tr.rbxcdn.com/180DAY-0ccd1f84d4c2f3be42e26e341ad81e44/150/150/Image/Webp/noFilter  " alt="" class="group-logo">
-                <div class="group-info">
-                    <h3>Purple Corporation Group!</h3>
-                    <p>The official group of Purple Corporation!</p>
-                    <div class="group-stats">
-                        <div class="group-stat-item">
-                            <strong>52K+</strong>
-                            <span>Members</span>
-                        </div>
-                        <a href="https://www.roblox.com/communities/11923821  " target="_blank" class="group-show-btn">
-                            Show Group
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="group-card">
-                <img src="https://tr.rbxcdn.com/180DAY-995f5eb345254ea2a1988c25216a536f/150/150/Image/Webp/noFilter  " alt="" class="group-logo">
-                <div class="group-info">
-                    <h3>Incredibles Favorites</h3>
-                    <p>Creating incredible experiences, delivering excitement straight to your door!</p>
-                    <div class="group-stats">
-                        <div class="group-stat-item">
-                            <strong>23K+</strong>
-                            <span>Members</span>
-                        </div>
-                        <a href="https://www.roblox.com/communities/17143662  " target="_blank" class="group-show-btn">
-                            Show Group
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="group-card">
-                <img src="https://tr.rbxcdn.com/180DAY-293904a5cd73b916718101c87263a124/150/150/Image/Webp/noFilter  " alt="" class="group-logo">
-                <div class="group-info">
-                    <h3>EpicX Development</h3>
-                    <p>Join our group and unlock exclusive in-game rewards! 🎮</p>
-                    <div class="group-stats">
-                        <div class="group-stat-item">
-                            <strong>8.7K+</strong>
-                            <span>Members</span>
-                        </div>
-                        <a href="https://www.roblox.com/communities/34756978  " target="_blank" class="group-show-btn">
-                            Show Group
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="group-card">
-                <img src="https://tr.rbxcdn.com/180DAY-ccf4029e992d36b4eef88fa5aecef616/150/150/Image/Webp/noFilter  " alt="" class="group-logo">
-                <div class="group-info">
-                    <h3>Gopala Games</h3>
-                    <p>No bio yet!</p>
-                    <div class="group-stats">
-                        <div class="group-stat-item">
-                            <strong>5.9K+</strong>
-                            <span>Members</span>
-                        </div>
-                        <a href="https://www.roblox.com/communities/35624634  " target="_blank" class="group-show-btn">
-                            Show Group
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="group-card">
-                <img src="https://tr.rbxcdn.com/180DAY-0ee2aac0facc2a1dd6ab5161f3c8c523/150/150/Image/Webp/noFilter  " alt="" class="group-logo">
-                <div class="group-info">
-                    <h3>Kryptide Games</h3>
-                    <p>where da magic happen</p>
-                    <div class="group-stats">
-                        <div class="group-stat-item">
-                            <strong>5.9K+</strong>
-                            <span>Members</span>
-                        </div>
-                        <a href="https://www.roblox.com/communities/32402468  " target="_blank" class="group-show-btn">
-                            Show Group
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="group-card">
-                <img src="https://tr.rbxcdn.com/180DAY-e4975f67f49e5d8bcc7dc27e5e8829bc/150/150/Image/Webp/noFilter  " alt="" class="group-logo">
-                <div class="group-info">
-                    <h3>Games For Fun</h3>
-                    <p>join our communication server to report any bugs or give suggestions!</p>
-                    <div class="group-stats">
-                        <div class="group-stat-item">
-                            <strong>5.8K+</strong>
-                            <span>Members</span>
-                        </div>
-                        <a href="https://www.roblox.com/communities/34433530  " target="_blank" class="group-show-btn">
-                            Show Group
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            </div>
-    </div>
-</section>
+        </div>
+    </section>
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio">
@@ -1071,28 +919,6 @@ nav {
                 <h2>My Portfolio</h2>
                 <p>Explore the Roblox games I've contributed to with scripting and UI design</p>
             </div>
-
-            <!-- NEW: Game Input Section 
-            <div class="game-input-section">
-                <h3 style="margin-bottom: 20px; color: var(--accent);"><i class="fas fa-plus-circle"></i> Add New Game</h3>
-                <div class="game-input-grid">
-                    <div class="input-group">
-                        <label for="gameId">Game ID (Universe ID)</label>
-                        <input type="number" id="gameId" placeholder="e.g., 383310974">
-                    </div>
-                    <div class="input-group">
-                        <label for="gameName">Game Name</label>
-                        <input type="text" id="gameName" placeholder="e.g., My Awesome Game">
-                    </div>
-                    <div class="input-group">
-                        <label for="gameDesc">Your Contribution</label>
-                        <input type="text" id="gameDesc" placeholder="e.g., Scripting & UI Design">
-                    </div>
-                    <button class="add-game-btn" onclick="addGame()">
-                        <i class="fas fa-plus"></i> Add Game
-                    </button>
-                </div>
-            </div>-->
             
             <div class="portfolio-filter">
                 <button class="filter-btn active" onclick="filterPortfolio('all')">All Projects</button>
@@ -1101,473 +927,117 @@ nav {
             </div>
             
             <div class="portfolio-grid" id="portfolio-grid">
-    <!-- Attempt On Delivery -->
-    <div class="portfolio-item" data-type="scripting">
-        <div class="portfolio-img">
-            <img src="https://tr.rbxcdn.com/180DAY-e20b7aad005fb74c1be0fe108ed9b207/768/432/Image/Webp/noFilter  " alt="Attempt On Delivery">
-        </div>
-        <div class="portfolio-info">
-            <h3>Attempt On Delivery</h3>
-            <p>Scripting some stuff in the Baseplate event</p>
-            <div class="game-stats-inline">
-                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
-                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
-            </div>
-            <a href="https://www.roblox.com/games/13301445090/Attempt-On-Delivery  " target="_blank">
-                View Game <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-    </div>
+                <!-- Attempt On Delivery -->
+                <div class="portfolio-item" data-type="scripting">
+                    <div class="portfolio-img">
+                        <img src="https://tr.rbxcdn.com/180DAY-e20b7aad005fb74c1be0fe108ed9b207/768/432/Image/Webp/noFilter" alt="Attempt On Delivery">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Attempt On Delivery</h3>
+                        <p>Scripting some stuff in the Baseplate event</p>
+                        <div class="game-stats-inline">
+                            <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
+                            <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
+                        </div>
+                        <a href="https://www.roblox.com/games/13301445090/Attempt-On-Delivery" target="_blank">
+                            View Game <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
 
-    <!-- Classical Obby -->
-    <div class="portfolio-item" data-type="scripting">
-        <div class="portfolio-img">
-            <img src="https://tr.rbxcdn.com/180DAY-a5917f8a7107d31f4112a636e664f88c/768/432/Image/Webp/noFilter  " alt="Classical Obby">
-        </div>
-        <div class="portfolio-info">
-            <h3>Classical Obby</h3>
-            <p>Contributed to bug fixing and Scripting a boss fight system</p>
-            <div class="game-stats-inline">
-                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
-                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
-            </div>
-            <a href="https://www.roblox.com/games/17080639528/Classical-Obby  " target="_blank">
-                View Game <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-    </div>
+                <!-- Classical Obby -->
+                <div class="portfolio-item" data-type="scripting">
+                    <div class="portfolio-img">
+                        <img src="https://tr.rbxcdn.com/180DAY-a5917f8a7107d31f4112a636e664f88c/768/432/Image/Webp/noFilter" alt="Classical Obby">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Classical Obby</h3>
+                        <p>Contributed to bug fixing and Scripting a boss fight system</p>
+                        <div class="game-stats-inline">
+                            <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
+                            <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
+                        </div>
+                        <a href="https://www.roblox.com/games/17080639528/Classical-Obby" target="_blank">
+                            View Game <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
 
+                <!-- Grow a Desert -->
+                <div class="portfolio-item" data-type="scripting">
+                    <div class="portfolio-img">
+                        <img src="https://tr.rbxcdn.com/180DAY-d66c4c4ca578a6f6d45f7c84b216cfc5/768/432/Image/Webp/noFilter" alt="Grow a Desert">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Grow a Desert</h3>
+                        <p>Scripting the gears update and more</p>
+                        <div class="game-stats-inline">
+                            <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
+                            <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
+                        </div>
+                        <a href="https://www.roblox.com/games/135249897634664/Grow-a-Desert" target="_blank">
+                            View Game <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
 
-    <!-- Grow a Desert -->
-    <div class="portfolio-item" data-type="scripting">
-        <div class="portfolio-img">
-            <img src="https://tr.rbxcdn.com/180DAY-d66c4c4ca578a6f6d45f7c84b216cfc5/768/432/Image/Webp/noFilter  " alt="Grow a Desert">
-        </div>
-        <div class="portfolio-info">
-            <h3>Grow a Desert</h3>
-            <p>Scripting the gears update and more</p>
-            <div class="game-stats-inline">
-                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
-                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
-            </div>
-            <a href="https://www.roblox.com/games/135249897634664/Grow-a-Desert  " target="_blank">
-                View Game <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-    </div>
+                <!-- Spiders -->
+                <div class="portfolio-item" data-type="scripting">
+                    <div class="portfolio-img">
+                        <img src="https://tr.rbxcdn.com/180DAY-c6a0434be707e46616d53711f057a796/768/432/Image/Webp/noFilter" alt="Spiders">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Spiders 🕷️🕸️</h3>
+                        <p>Scripting & Game Mechanics of the entire game</p>
+                        <div class="game-stats-inline">
+                            <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
+                            <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
+                        </div>
+                        <a href="https://www.roblox.com/games/100546488075796" target="_blank">
+                            View Game <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
 
-    <!-- Spiders -->
-    <div class="portfolio-item" data-type="scripting">
-        <div class="portfolio-img">
-            <img src="https://tr.rbxcdn.com/180DAY-c6a0434be707e46616d53711f057a796/768/432/Image/Webp/noFilter  " alt="Spiders">
-        </div>
-        <div class="portfolio-info">
-            <h3>Spiders 🕷️🕸️</h3>
-            <p>Scripting & Game Mechanics of the entire game</p>
-            <div class="game-stats-inline">
-                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
-                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
-            </div>
-            <a href="https://www.roblox.com/games/100546488075796  " target="_blank">
-                View Game <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-    </div>
+                <!-- Add more portfolio items here following the same pattern...  -->
+                <!-- I'll add a few more examples -->
 
-    <!-- 99 Nights in the Forest Thieves -->
-    <div class="portfolio-item" data-type="scripting">
-        <div class="portfolio-img">
-            <img src="https://tr.rbxcdn.com/180DAY-8dddc6ab80ac79e14a7ebe2aa003c5e5/768/432/Image/Webp/noFilter  " alt="99 Nights in the Forest Thieves">
-        </div>
-        <div class="portfolio-info">
-            <h3>99 Nights in the Forest Thieves</h3>
-            <p>Scripting and instalizing the system</p>
-            <div class="game-stats-inline">
-                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
-                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
-            </div>
-            <a href="https://www.roblox.com/games/114583749499494  " target="_blank">
-                View Game <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-    </div>
+                <!-- Rate PS99 Community -->
+                <div class="portfolio-item" data-type="scripting ui">
+                    <div class="portfolio-img">
+                        <img src="https://tr.rbxcdn.com/180DAY-8d7bc5899b9d6544c224530088710fbe/768/432/Image/Webp/noFilter" alt="Rate PS99 Community">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Rate PS99 Community</h3>
+                        <p>Scripting & UI Design</p>
+                        <div class="game-stats-inline">
+                            <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
+                            <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
+                        </div>
+                        <a href="https://www.roblox.com/games/15778480714/Rate-PS99-Community" target="_blank">
+                            View Game <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
 
-    <!-- Steal a cartoon -->
-    <div class="portfolio-item" data-type="scripting">
-        <div class="portfolio-img">
-            <img src="https://tr.rbxcdn.com/180DAY-cc4394bb96813252608e9045e7c38abe/768/432/Image/Webp/noFilter  " alt="Steal a cartoon">
-        </div>
-        <div class="portfolio-info">
-            <h3>Steal a cartoon</h3>
-            <p>Scripting and instalizing the system</p>
-            <div class="game-stats-inline">
-                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
-                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
+                <!-- Sea Miners -->
+                <div class="portfolio-item" data-type="scripting ui">
+                    <div class="portfolio-img">
+                        <img src="https://tr.rbxcdn.com/180DAY-233f29520aaa223b9a29ea4f701d7666/768/432/Image/Webp/noFilter" alt="Sea Miners">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Sea Miners</h3>
+                        <p>Scripting & Game Mechanics of the entire game & UI Design</p>
+                        <div class="game-stats-inline">
+                            <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading... </span></span>
+                            <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
+                        </div>
+                        <a href="https://www.roblox.com/games/13809725768/Sea-Miners" target="_blank">
+                            View Game <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <a href="https://www.roblox.com/games/137253865256902  " target="_blank">
-                View Game <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-    </div>
-    
- <!-- Steal a Mochi -->
-    <div class="portfolio-item" data-type="scripting">
-        <div class="portfolio-img">
-            <img src="https://tr.rbxcdn.com/180DAY-417a12ab4952735a7062535093fc6f49/768/432/Image/Webp/noFilter  " alt="Steal a Mochi">
-        </div>
-        <div class="portfolio-info">
-            <h3>Steal a Mochi</h3>
-            <p>Scripting and bug fixing</p>
-            <div class="game-stats-inline">
-                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
-                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
-            </div>
-            <a href="https://www.roblox.com/games/118343337877640  " target="_blank">
-                View Game <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-    </div>
-
-    <!-- Escape From Prison -->
-    <div class="portfolio-item" data-type="scripting">
-        <div class="portfolio-img">
-            <img src="https://tr.rbxcdn.com/180DAY-83bb8a4dd7977b97d04cedb0e627fe74/768/432/Image/Webp/noFilter  " alt="Escape From Prison">
-        </div>
-        <div class="portfolio-info">
-            <h3>Escape From Prison</h3>
-            <p>Scripting and Bug fixing and improving stats</p>
-            <div class="game-stats-inline">
-                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
-                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
-            </div>
-            <a href="https://www.roblox.com/games/104838711764299/  " target="_blank">
-                View Game <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-    </div>
-
-    <!-- Jetpack Troll Tower -->
-    <div class="portfolio-item" data-type="scripting">
-        <div class="portfolio-img">
-            <img src="https://tr.rbxcdn.com/180DAY-2347b554d91ccc043e3991c07438ff05/768/432/Image/Webp/noFilter  " alt="Jetpack Troll Tower">
-        </div>
-        <div class="portfolio-info">
-            <h3>Jetpack Troll Tower</h3>
-            <p>Scripting and instalizing the system</p>
-            <div class="game-stats-inline">
-                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
-                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
-            </div>
-            <a href="https://www.roblox.com/games/80181633679651  " target="_blank">
-                View Game <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-    </div>
-
-    <!-- Limited Factory Tycoon -->
-    <div class="portfolio-item" data-type="scripting">
-        <div class="portfolio-img">
-            <img src="https://tr.rbxcdn.com/180DAY-a9ca3921f21dceed513fc072166d24e1/768/432/Image/Webp/noFilter  " alt="Limited Factory Tycoon">
-        </div>
-        <div class="portfolio-info">
-            <h3>Limited Factory Tycoon</h3>
-            <p>Scripting & Bug fixing</p>
-            <div class="game-stats-inline">
-                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
-                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
-            </div>
-            <a href="https://www.roblox.com/games/109798817580185/Limited-Factory-Tycoon  " target="_blank">
-                View Game <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-    </div>
-
-    <!-- The Baseplate -->
-    <div class="portfolio-item" data-type="scripting">
-        <div class="portfolio-img">
-            <img src="https://tr.rbxcdn.com/180DAY-07a12a775627b48b281307da6b556d23/768/432/Image/Webp/noFilter  " alt="The Baseplate">
-        </div>
-        <div class="portfolio-info">
-            <h3>The Baseplate</h3>
-            <p>Contributed to Scripting</p>
-            <div class="game-stats-inline">
-                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
-                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
-            </div>
-            <a href="https://www.roblox.com/games/94868599454963/The-Baseplate  " target="_blank">
-                View Game <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-    </div>
-
-    <!-- Rate PS99 Community -->
-    <div class="portfolio-item" data-type="scripting ui">
-        <div class="portfolio-img">
-            <img src="https://tr.rbxcdn.com/180DAY-8d7bc5899b9d6544c224530088710fbe/768/432/Image/Webp/noFilter  " alt="Rate PS99 Community">
-        </div>
-        <div class="portfolio-info">
-            <h3>Rate PS99 Community</h3>
-            <p>Scripting & UI Design</p>
-            <div class="game-stats-inline">
-                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
-                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
-            </div>
-            <a href="https://www.roblox.com/games/15778480714/Rate-PS99-Community  " target="_blank">
-                View Game <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-    </div>
-
-    <!-- Climb for Admin -->
-    <div class="portfolio-item" data-type="scripting ui">
-        <div class="portfolio-img">
-            <img src="https://tr.rbxcdn.com/180DAY-12c7d856440403a6b2b877ac35f37557/768/432/Image/Webp/noFilter  " alt="Climb for Admin">
-        </div>
-        <div class="portfolio-info">
-            <h3>Climb for Admin</h3>
-            <p>Scripting & Game Mechanics of the entire game & UI Design</p>
-            <div class="game-stats-inline">
-                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
-                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
-            </div>
-            <a href="https://www.roblox.com/games/127787079237775/Climb-for-Admin  " target="_blank">
-                View Game <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-    </div>
-
-    <!-- Clean Up Pet Sim X -->
-    <div class="portfolio-item" data-type="scripting">
-        <div class="portfolio-img">
-            <img src="https://t0.rbxcdn.com/180DAY-3ee43b8811a96790abd50ff0ada3c6de  " alt="Clean Up Pet Sim X Community">
-        </div>
-        <div class="portfolio-info">
-            <h3>Clean Up Pet Sim X</h3>
-            <p>Scripting</p>
-            <div class="game-stats-inline">
-                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
-                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
-            </div>
-            <a href="https://www.roblox.com/games/13389245649/clean-up-pet-sim-x-community  " target="_blank">
-                View Game <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-    </div>
-
-    <!-- Mini-jeux Funiverse -->
-    <div class="portfolio-item" data-type="scripting">
-        <div class="portfolio-img">
-            <img src="https://tr.rbxcdn.com/180DAY-cf82ff6c5fd448d773964e19756d7cff/768/432/Image/Webp/noFilter  " alt="Mini-jeux Funiverse">
-        </div>
-        <div class="portfolio-info">
-            <h3>Mini-jeux Funiverse</h3>
-            <p>Quest system Scripting and Bug Fixing</p>
-            <div class="game-stats-inline">
-                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
-                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
-            </div>
-            <a href="https://www.roblox.com/games/123903036390298/Mini-jeux-Funiverse-play-and-win-ugc  " target="_blank">
-                View Game <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-    </div>
-
-    <!-- Sea Miners -->
-    <div class="portfolio-item" data-type="scripting ui">
-        <div class="portfolio-img">
-            <img src="https://tr.rbxcdn.com/180DAY-233f29520aaa223b9a29ea4f701d7666/768/432/Image/Webp/noFilter  " alt="Sea Miners">
-        </div>
-        <div class="portfolio-info">
-            <h3>Sea Miners</h3>
-            <p>Scripting & Game Mechanics of the entire game & UI Design</p>
-            <div class="game-stats-inline">
-                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
-                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
-            </div>
-            <a href="https://www.roblox.com/games/13809725768/Sea-Miners  " target="_blank">
-                View Game <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-    </div>
-
-    <!-- VOICE CHAT DreamVibe -->
-    <div class="portfolio-item" data-type="scripting">
-        <div class="portfolio-img">
-            <img src="https://tr.rbxcdn.com/180DAY-f8da47332d209c12f15e65fc63ae73d0/768/432/Image/Webp/noFilter  " alt="VOICE CHAT DreamVibe">
-        </div>
-        <div class="portfolio-info">
-            <h3>VOICE CHAT DreamVibe</h3>
-            <p>Some Scripting and bug fixing</p>
-            <div class="game-stats-inline">
-                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
-                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
-            </div>
-            <a href="https://www.roblox.com/games/8526672149/VOICE-CHAT-DreamVibe-Beta-V-1  " target="_blank">
-                View Game <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-    </div>
-
-    <!-- Find All RedNoobs -->
-    <div class="portfolio-item" data-type="scripting">
-        <div class="portfolio-img">
-            <img src="https://tr.rbxcdn.com/180DAY-dd939b1be9f8778f5f02b1341dfc7c3e/768/432/Image/Webp/noFilter  " alt="Find All RedNoobs">
-        </div>
-        <div class="portfolio-info">
-            <h3>Find All RedNoobs</h3>
-            <p>Scripting Main game system</p>
-            <div class="game-stats-inline">
-                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
-                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
-            </div>
-            <a href="https://www.roblox.com/games/115356499725157/CLOSED-Find-All-RedNoobs-Ugc  " target="_blank">
-                View Game <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-    </div>
-
-    <!-- Be a Painter -->
-    <div class="portfolio-item" data-type="scripting">
-        <div class="portfolio-img">
-            <img src="https://i.ytimg.com/vi/toCAYmviMB0/maxresdefault.jpg  " alt="Be a Painter">
-        </div>
-        <div class="portfolio-info">
-            <h3>Be a Painter</h3>
-            <p>Scripting the Crates System and fixing some bugs</p>
-            <div class="game-stats-inline">
-                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
-                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
-            </div>
-            <a href="https://www.roblox.com/games/124320681836428/Be-a-Painter  " target="_blank">
-                View Game <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-    </div>
-
-    <!-- Donation World -->
-    <div class="portfolio-item" data-type="scripting">
-        <div class="portfolio-img">
-            <img src="https://tr.rbxcdn.com/180DAY-e957133f4d2f56d9b472db3f194c7837/768/432/Image/Webp/noFilter  " alt="Donation World" >
-        </div>
-        <div class="portfolio-info">
-            <h3>Donation World</h3>
-            <p>Scripting the entire game</p>
-            <div class="game-stats-inline">
-                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
-                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
-            </div>
-            <a href="https://www.roblox.com/games/120818703728828/Donation-World  " target="_blank">
-                View Game <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-    </div>
-
-    <!-- Squid Obbies! 🎵 -->
-    <div class="portfolio-item" data-type="scripting">
-        <div class="portfolio-img">
-            <img src="https://i.ytimg.com/vi/toCAYmviMB0/maxresdefault.jpg  " alt="Squid Obbies">
-        </div>
-        <div class="portfolio-info">
-            <h3>Squid Obbies! 🎵</h3>
-            <p>Scripting the entire game</p>
-            <div class="game-stats-inline">
-                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
-                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
-            </div>
-            <a href="https://www.roblox.com/games/72276909673765/Squid-Obbies-Beta-Test  " target="_blank">
-                View Game <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-    </div>
-
-    <!-- Bubble Gum Survival -->
-    <div class="portfolio-item" data-type="scripting">
-        <div class="portfolio-img">
-            <img src="https://tr.rbxcdn.com/180DAY-7429e92f31db9f6b78946f5c9a2a5f27/768/432/Image/Webp/noFilter  " alt="Bubble Gum Survival">
-        </div>
-        <div class="portfolio-info">
-            <h3>Bubble Gum Survival</h3>
-            <p>Scripting almost the entire game</p>
-            <div class="game-stats-inline">
-                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
-                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
-            </div>
-            <a href="https://www.roblox.com/games/18360397885/NEW-Bubble-Gum-Survival  " target="_blank">
-                View Game <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-    </div>
-    <!-- Obby Vs Snipers -->
-    <div class="portfolio-item" data-type="scripting">
-        <div class="portfolio-img">
-            <img src="https://tr.rbxcdn.com/180DAY-e6f2ac52922379d743dcdede113c3689/768/432/Image/Webp/noFilter  " alt="Obby Vs Snipers">
-        </div>
-        <div class="portfolio-info">
-            <h3>Obby vs snipers</h3>
-            <p>Scripting</p>
-            <div class="game-stats-inline">
-                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
-                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
-            </div>
-            <a href="https://www.roblox.com/games/100388035033319  " target="_blank">
-                View Game <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-    </div>
-    <!-- Farting Simulator -->
-    <div class="portfolio-item" data-type="scripting">
-        <div class="portfolio-img">
-            <img src="https://tr.rbxcdn.com/180DAY-bb220e9e342ab567e294acff598eeab3/768/432/Image/Webp/noFilter  " alt="Farting Simulator">
-        </div>
-        <div class="portfolio-info">
-            <h3>Farting simulator</h3>
-            <p>Scripting features and bug fixes to an egg system </p>
-            <div class="game-stats-inline">
-                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
-                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
-            </div>
-            <a href="https://www.roblox.com/games/17401167982/Farting-Simulator  " target="_blank">
-                View Game <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-    </div>
-    <!-- Pet Clickers -->
-    <div class="portfolio-item" data-type="scripting">
-        <div class="portfolio-img">
-            <img src="https://tr.rbxcdn.com/180DAY-288b9d8f87a43d68c0240aeb50975160/768/432/Image/Webp/noFilter  " alt="Pet Clickers">
-        </div>
-        <div class="portfolio-info">
-            <h3>Pet Clickers</h3>
-            <p>Scripting</p>
-            <div class="game-stats-inline">
-                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
-                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
-            </div>
-            <a href="https://www.roblox.com/games/124112380363426/Pet-Clickers  " target="_blank">
-                View Game <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-    </div>
-
-    <!-- Game Hub -->
-    <div class="portfolio-item" data-type="scripting">
-        <div class="portfolio-img">
-            <img src="https://tr.rbxcdn.com/180DAY-8a1c013fb0bad48349925a754b4b2d2e/768/432/Image/Webp/noFilter  " alt="Game Hub">
-        </div>
-        <div class="portfolio-info">
-            <h3>Game Hub</h3>
-            <p>Scripting the entierety of the main game functionality</p>
-            <div class="game-stats-inline">
-                <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
-                <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
-            </div>
-            <a href="https://www.roblox.com/games/116244414212985/Game-Hub  " target="_blank">
-                View Game <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-    </div>
-</div>
-
         </div>
     </section>
 
@@ -1597,7 +1067,7 @@ nav {
                         </div>
                         <div class="contact-text">
                             <h4>Email</h4>
-                            <a href="mailto:contact@ygmdev.com">ygmdev@gmail.com</a>
+                            <a href="mailto: ygmdev@gmail.com">ygmdev@gmail.com</a>
                         </div>
                     </div>
                     
@@ -1607,7 +1077,7 @@ nav {
                         </div>
                         <div class="contact-text">
                             <h4>Discord</h4>
-                            <a href="https://discord.gg/NJcQAa4dUZ  " target="_blank">ygm. (Join Server)</a>
+                            <a href="https://discord.gg/NJcQAa4dUZ" target="_blank">ygm.  (Join Server)</a>
                         </div>
                     </div>
                     
@@ -1618,13 +1088,13 @@ nav {
                         <div class="contact-text">
                             <h4>Social Media</h4>
                             <div class="social-links">
-                                <a href="https://x.com/YGMDev  " target="_blank" class="social-link">
+                                <a href="https://x.com/YGMDev" target="_blank" class="social-link">
                                     <i class="fab fa-twitter"></i>
                                 </a>
-                                <a href="https://www.roblox.com/users/1574873141/profile  " target="_blank" class="social-link">
-                                    <img src="/Assets/roblox.png"></img>
+                                <a href="https://www.roblox.com/users/1574873141/profile" target="_blank" class="social-link">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/5969/5969346.png" alt="Roblox">
                                 </a>
-                                <a href="https://www.youtube.com/channel/UCxkIR8zU1ChZbzUzHobYU3A  " target="_blank" class="social-link">
+                                <a href="https://www.youtube.com/channel/UCxkIR8zU1ChZbzUzHobYU3A" target="_blank" class="social-link">
                                     <i class="fab fa-youtube"></i>
                                 </a>
                             </div>
@@ -1640,198 +1110,147 @@ nav {
         <div class="container">
             <div class="footer-content">
                 <a href="#" class="footer-logo">
-                    <img src="/Assets/pfp.png" alt="YGMDev">
+                    <img src="Assets/pfp.png" alt="YGMDev">
                     <span>YGMDev</span>
                 </a>
-                <p class="copyright">© 2026 YGMDev. All rights reserved. Roblox Scripter</p>
+                <p class="copyright">© 2026 YGMDev. All rights reserved.  Roblox Scripter</p>
             </div>
         </div>
     </footer>
 
     <script>
-    // NEW: Function to fetch game data from Roblox API
-    async function fetchGameData(universeId, element) {
-        const visitsEl = element.querySelector('.visits-count');
-        const playingEl = element.querySelector('.playing-count');
-        
-        try {
-            visitsEl.innerHTML = '<span class="loading-spinner"></span>';
-            playingEl.innerHTML = '<span class="loading-spinner"></span>';
-            
-            //const response = await fetch(`https://games.roproxy.com/v1/games?universeIds=${universeId}`);
-             const response = await fetch(`api/roblox?ids=${universeId}`);
-            if (!response.ok) {
-                throw new Error('Failed to fetch game data');
-            }
-           
-            const data = await response.json();
-            //const data = await response.json();
-            
-            if (data.data && data.data.length > 0) {
-                const game = data.data[0];
-                const visits = game.visits || 0;
-                const playing = game.playing || 0;
+        // API Configuration - Change this to your deployed API endpoint
+        const API_BASE_URL = '/api/roblox'; // For local development
+        // For production, use:  const API_BASE_URL = 'https://your-domain.com/api/roblox';
+
+        // Function to get Roblox game statistics via API
+        async function getRobloxGameStats(universeId) {
+            try {
+                const response = await fetch(`${API_BASE_URL}? ids=${universeId}`);
                 
-                // Format numbers (e.g., 1200 -> 1.2K)
-                const formatNumber = (num) => {
-                    if (num >= 1000000) return (num / 1000000).toFixed(1) + 'M';
-                    if (num >= 1000) return (num / 1000).toFixed(1) + 'K';
-                    return num.toString();
+                if (!response.ok) {
+                    throw new Error(`API returned status ${response.status}`);
+                }
+
+                const data = await response.json();
+                
+                if (! data.data || data.data.length === 0) {
+                    throw new Error('Game not found');
+                }
+                
+                const game = data.data[0];
+                
+                return {
+                    name: game.name,
+                    description: game.description,
+                    creator: game.creator. name,
+                    visits: game.visits,
+                    favorites: game.favoritedCount,
+                    playing: game.playing,
+                    maxPlayers: game.maxPlayers,
+                    created: game.created,
+                    updated: game.updated
                 };
                 
-                visitsEl.textContent = formatNumber(visits) + ' visits';
-                playingEl.textContent = formatNumber(playing) + ' playing';
-            } else {
-                visitsEl.textContent = 'N/A';
-                playingEl.textContent = 'N/A';
+            } catch (error) {
+                console.error('Error fetching game stats:', error);
+                throw error;
             }
-        } catch (error) {
-            console.error('Error fetching game data:', error);
-            visitsEl.innerHTML = '<span class="error-text">Error</span>';
-            playingEl.innerHTML = '<span class="error-text">Error</span>';
         }
-    }
 
-    // NEW: Function to extract Universe ID from Roblox URL
-    function extractUniverseId(url) {
-        try {
-            // Try to extract from URL if it's a roblox.com/games/ URL
-            if (url.includes('roblox.com/games/')) {
-                const match = url.match(/games\/(\d+)/);
-                return match ? match[1] : null;
-            }
-            return url; // If not a URL, assume it's already an ID
-        } catch {
-            return url;
+        // Format large numbers (1200 -> 1.2K)
+        function formatNumber(num) {
+            if (num >= 1000000000) return (num / 1000000000).toFixed(1) + 'B';
+            if (num >= 1000000) return (num / 1000000).toFixed(1) + 'M';
+            if (num >= 1000) return (num / 1000).toFixed(1) + 'K';
+            return num.toString();
         }
-    }
 
-    // NEW: Function to add a new game
-    function addGame() {
-        const gameId = document.getElementById('gameId').value.trim();
-        const gameName = document.getElementById('gameName').value.trim();
-        const gameDesc = document.getElementById('gameDesc').value.trim();
-        
-        if (!gameId || !gameName || !gameDesc) {
-            alert('Please fill in all fields!');
-            return;
-        }
-        
-        const universeId = extractUniverseId(gameId);
-        
-        // Create new portfolio item
-        const portfolioGrid = document.getElementById('portfolio-grid');
-        const newItem = document.createElement('div');
-        newItem.className = 'portfolio-item';
-        newItem.setAttribute('data-type', 'scripting');
-        newItem.innerHTML = `
-            <div class="portfolio-img">
-                <img src="https://tr.rbxcdn.com/180DAY-8a1c013fb0bad48349925a754b4b2d2e/768/432/Image/Webp/noFilter" alt="${gameName}">
-            </div>
-            <div class="portfolio-info">
-                <h3>${gameName}</h3>
-                <p>${gameDesc}</p>
-                <div class="game-stats-inline">
-                    <span class="stat-inline"><i class="fas fa-eye"></i> <span class="visits-count">Loading...</span></span>
-                    <span class="stat-inline"><i class="fas fa-users"></i> <span class="playing-count">Loading...</span></span>
-                </div>
-                <a href="https://www.roblox.com/games/${universeId}/" target="_blank">
-                    View Game <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-        `;
-        
-        portfolioGrid.insertBefore(newItem, portfolioGrid.firstChild);
-        
-        // Fetch game data
-        fetchGameData(universeId, newItem);
-        
-        // Clear form
-        document.getElementById('gameId').value = '';
-        document.getElementById('gameName').value = '';
-        document.getElementById('gameDesc').value = '';
-        
-        // Show success message
-        alert('Game added successfully! Stats are being fetched...');
-    }
-
-    // NEW: Function to filter portfolio
-    function filterPortfolio(type) {
-        const items = document.querySelectorAll('.portfolio-item');
-        const buttons = document.querySelectorAll('.filter-btn');
-        
-        buttons.forEach(btn => btn.classList.remove('active'));
-        event.target.classList.add('active');
-        
-        items.forEach(item => {
-            if (type === 'all') {
-                item.style.display = 'block';
-            } else {
-                const itemType = item.getAttribute('data-type') || '';
-                if (itemType.includes(type)) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
+        // Extract Universe ID from Roblox URL
+        function extractUniverseId(url) {
+            try {
+                if (url.includes('roblox.com/games/')) {
+                    const match = url.match(/games\/(\d+)/);
+                    return match ? match[1] : null;
                 }
+                return url;
+            } catch {
+                return url;
             }
-        });
-    }
+        }
 
-    // MODIFIED: Portfolio filtering functionality (kept for backward compatibility)
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const portfolioItems = document.querySelectorAll('.portfolio-item');
-
-    filterBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            filterBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            const filter = btn.textContent;
-
-            portfolioItems.forEach(item => {
-                const itemType = item.querySelector('p').textContent;
-                if (filter === 'All Projects' || itemType.includes(filter)) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        });
-    });
-
-    // NEW: Fetch all game data on page load
-    window.addEventListener('load', () => {
-        const gameItems = document.querySelectorAll('.portfolio-item');
-        
-        gameItems.forEach((item, index) => {
-            // Extract universe ID from the game link
-            const link = item.querySelector('a').getAttribute('href');
-            const match = link.match(/games\/(\d+)/);
+        // Fetch and display game data for a portfolio item
+        async function fetchGameData(universeId, element) {
+            const visitsEl = element.querySelector('.visits-count');
+            const playingEl = element.querySelector('.playing-count');
             
-            if (match) {
+            try {
+                visitsEl.innerHTML = '<span class="loading-spinner"></span>';
+                playingEl. innerHTML = '<span class="loading-spinner"></span>';
                 
-                const universeId = match[1];
-                // Add delay to avoid rate limiting
-                setTimeout(() => {
-                    fetchGameData(universeId, item);
-                }, index * 200); // 200ms delay between each request
+                const stats = await getRobloxGameStats(universeId);
+                
+                visitsEl.textContent = formatNumber(stats.visits);
+                playingEl.textContent = formatNumber(stats.playing);
+                
+            } catch (error) {
+                console.error('Error fetching game data:', error);
+                visitsEl.innerHTML = '<span class="error-text">Failed</span>';
+                playingEl.innerHTML = '<span class="error-text">Failed</span>';
             }
-        });
-    });
+        }
 
-    // Smooth scrolling
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
+        // Filter portfolio items
+        function filterPortfolio(type) {
+            const items = document.querySelectorAll('. portfolio-item');
+            const buttons = document.querySelectorAll('. filter-btn');
+            
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            items.forEach(item => {
+                if (type === 'all') {
+                    item.style. display = 'block';
+                } else {
+                    const itemType = item.getAttribute('data-type') || '';
+                    if (itemType. includes(type)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                }
+            });
+        }
+
+        // Initialize on page load
+        window.addEventListener('load', () => {
+            const gameItems = document.querySelectorAll('. portfolio-item');
+            
+            gameItems.forEach((item, index) => {
+                const link = item.querySelector('a[href*="roblox.com"]');
+                if (! link) return;
+                
+                const universeId = extractUniverseId(link.getAttribute('href'));
+                
+                if (universeId) {
+                    // Stagger requests to avoid rate limiting (400ms delay)
+                    setTimeout(() => {
+                        fetchGameData(universeId, item);
+                    }, index * 400);
+                }
             });
         });
-    });
-</script>
 
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
-
-
-
-
