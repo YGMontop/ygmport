@@ -1,59 +1,51 @@
-// Function to get Roblox game statistics
-async function getRobloxGameStats(universeId) {
-    try {
-        // Fetch game details
-        const gameResponse = await fetch(https://games.roblox.com/v1/games? universeIds=${universeId});
-        const gameData = await gameResponse.json();
+// Roblox API Proxy Handler
+// This handles requests to fetch Roblox game statistics
 
-        if (!gameData. data  gameData.data.length === 0) {
-            throw new Error('Game not found');
+export default async function handler(req, res) {
+    // Enable CORS
+    res.setHeader('Access-Control-Allow-Credentials', true);
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type, Accept');
+
+    // Handle preflight OPTIONS request
+    if (req.method === 'OPTIONS') {
+        res.status(200).end();
+        return;
+    }
+
+    // Only allow GET requests
+    if (req.method !== 'GET') {
+        res.status(405).json({ error: 'Method not allowed' });
+        return;
+    }
+
+    try {
+        // Get universe IDs from query parameter
+        const { ids } = req.query;
+
+        if (!ids) {
+            res.status(400).json({ error: 'Missing universe IDs parameter' });
+            return;
         }
 
-        const game = gameData.data[0];
+        // Fetch game data from Roblox API
+        const gameResponse = await fetch(`https://games.roblox.com/v1/games? universeIds=${ids}`);
+        
+        if (!gameResponse.ok) {
+            throw new Error(`Roblox API returned status ${gameResponse.status}`);
+        }
 
-        // Fetch votes (likes/dislikes)
-        const votesResponse = await fetch(https://games.roblox.com/v1/games/votes?universeIds=${universeId});
-        const votesData = await votesResponse.json();
-        const votes = votesData.data[0]  { upVotes: 0, downVotes: 0 };
+        const gameData = await gameResponse.json();
 
-        // Fetch thumbnail
-        const thumbnailResponse = await fetch(https://thumbnails.roblox.com/v1/games/icons?universeIds=${universeId}&size=512x512&format=Png&isCircular=false);
-        const thumbnailData = await thumbnailResponse.json();
-        const thumbnail = thumbnailData.data[0]?.imageUrl || '';
-
-        // Return all stats
-        return {
-            name: game.name,
-            description: game.description,
-            creator: game.creator. name,
-            creatorType: game.creator.type,
-            visits: game.visits,
-            favorites: game.favoritedCount,
-            likes: votes.upVotes,
-            dislikes:  votes.downVotes,
-            playing: game.playing,
-            maxPlayers: game.maxPlayers,
-            price: game.price,
-            thumbnail: thumbnail,
-            created: game.created,
-            updated: game.updated
-        };
+        // Return the data
+        res.status(200).json(gameData);
 
     } catch (error) {
-        console.error('Error fetching game stats:', error);
-        throw error;
+        console.error('Error fetching from Roblox API:', error);
+        res.status(500).json({ 
+            error: 'Failed to fetch game data',
+            message: error.message 
+        });
     }
 }
-
-// Example usage:
-getRobloxGameStats(920587237).then(stats => {
-    console.log('Game Name:', stats.name);
-    console.log('Visits:', stats.visits);
-    console.log('Favorites:', stats. favorites);
-    console.log('Likes:', stats.likes);
-    console.log('Dislikes:', stats.dislikes);
-    console.log('Currently Playing:', stats.playing);
-    console.log('Max Players:', stats.maxPlayers);
-    console.log('Creator:', stats.creator);
-    console.log('Full stats:', stats);
-});
