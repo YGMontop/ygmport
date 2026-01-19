@@ -1642,6 +1642,7 @@
                     // Stagger requests to avoid rate limiting (2 second delay)
                     setTimeout(() => {
                         fetchGameData(universeId, item);
+                        displayTotalVisits(totalVisits)
                     }, index * 2000);
                 }
             });
@@ -1660,7 +1661,7 @@
                 if (target) {
                     target.scrollIntoView({ behavior: 'smooth' });
                 }
-                displayTotalVisits(totalVisits)
+                
             });
         });
         
