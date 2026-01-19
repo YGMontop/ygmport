@@ -1,4 +1,4 @@
-<! DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="Assets/pfp.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        : root {
+        :root {
             --primary:  #4A6FFF;
             --primary-dark: #3A5AD9;
             --secondary: #FF6B6B;
@@ -94,7 +94,7 @@
             color: var(--accent);
         }
         
-        . nav-links a:: after {
+        .nav-links a::after {
             content: '';
             position: absolute;
             bottom: 0;
@@ -119,7 +119,7 @@
             overflow: hidden;
         }
         
-        .hero:: before {
+        .hero::before {
             content: '';
             position: absolute;
             top: 0;
@@ -166,7 +166,7 @@
         }
         
         h1 {
-            font-size: 3. 5rem;
+            font-size: 3.5rem;
             margin-bottom: 20px;
             line-height: 1.2;
         }
@@ -200,7 +200,7 @@
             box-shadow:  0 10px 20px rgba(74, 111, 255, 0.3);
         }
         
-        . btn-secondary {
+        .btn-secondary {
             background: transparent;
             border-color: var(--accent);
             color: var(--accent);
@@ -242,7 +242,7 @@
             border-radius: 2px;
         }
         
-        . section-header p {
+        .section-header p {
             max-width: 700px;
             margin: 20px auto 0;
             color: var(--gray);
@@ -381,7 +381,7 @@
             margin-bottom: 15px;
         }
         
-        . portfolio-info a {
+        .portfolio-info a {
             color: var(--accent);
             text-decoration:  none;
             font-weight: 500;
@@ -558,7 +558,7 @@
             margin-bottom: 15px;
         }
 
-        . group-stats {
+        .group-stats {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -603,12 +603,12 @@
             transform: scale(1.05);
         }
 
-        . verified-icon {
+        .verified-icon {
             color: #1DA1F2;
             margin-left: 6px;
         }
 
-        . copyright {
+        .copyright {
             color: var(--gray);
             font-size: 0.9rem;
         }
@@ -621,7 +621,7 @@
             font-size: 0.85rem;
         }
 
-        . stat-inline {
+        .stat-inline {
             display: flex;
             align-items: center;
             gap: 5px;
@@ -632,7 +632,7 @@
             display: inline-block;
             width: 12px;
             height: 12px;
-            border: 2px solid rgba(255,255,255,. 3);
+            border: 2px solid rgba(255,255,255,0.3);
             border-radius: 50%;
             border-top-color: var(--accent);
             animation: spin 1s ease-in-out infinite;
@@ -642,7 +642,7 @@
             to { transform: rotate(360deg); }
         }
 
-        . error-text {
+        .error-text {
             color: #ff6b6b;
             font-size: 0.8rem;
         }
@@ -930,7 +930,7 @@
                 <!-- Attempt On Delivery -->
                 <div class="portfolio-item" data-type="scripting">
                     <div class="portfolio-img">
-                        <img src="https://tr.rbxcdn.com/180DAY-e20b7aad005fb74c1be0fe108ed9b207/768/432/Image/Webp/noFilter" alt="Attempt On Delivery">
+                        <img src="https://tr.rbxcdn.com/180DAY-145e03bf04789897c65c352b750b6b85/768/432/Image/Webp/noFilter" alt="Attempt On Delivery">
                     </div>
                     <div class="portfolio-info">
                         <h3>Attempt On Delivery</h3>
@@ -984,7 +984,7 @@
                 <!-- Spiders -->
                 <div class="portfolio-item" data-type="scripting">
                     <div class="portfolio-img">
-                        <img src="https://tr.rbxcdn.com/180DAY-c6a0434be707e46616d53711f057a796/768/432/Image/Webp/noFilter" alt="Spiders">
+                        <img src="https://tr.rbxcdn.com/180DAY-3a93761837b4b793342a8a7dacb0e551/768/432/Image/Webp/noFilter" alt="Spiders">
                     </div>
                     <div class="portfolio-info">
                         <h3>Spiders 🕷️🕸️</h3>
@@ -1119,14 +1119,11 @@
     </footer>
 
     <script>
-        // API Configuration - Change this to your deployed API endpoint
-        const API_BASE_URL = '/api/roblox'; // For local development
-        // For production, use:  const API_BASE_URL = 'https://your-domain.com/api/roblox';
-
-        // Function to get Roblox game statistics via API
+        // Function to get Roblox game statistics via local proxy
         async function getRobloxGameStats(universeId) {
             try {
-                const response = await fetch(`${API_BASE_URL}? ids=${universeId}`);
+                // Call local API proxy
+                const response = await fetch(`/api/roblox?ids=${universeId}`);
                 
                 if (!response.ok) {
                     throw new Error(`API returned status ${response.status}`);
@@ -1134,7 +1131,7 @@
 
                 const data = await response.json();
                 
-                if (! data.data || data.data.length === 0) {
+                if (!data.data || data.data.length === 0) {
                     throw new Error('Game not found');
                 }
                 
@@ -1143,13 +1140,14 @@
                 return {
                     name: game.name,
                     description: game.description,
-                    creator: game.creator. name,
+                    creator: game.creator.name,
                     visits: game.visits,
                     favorites: game.favoritedCount,
                     playing: game.playing,
                     maxPlayers: game.maxPlayers,
                     created: game.created,
-                    updated: game.updated
+                    updated: game.updated,
+                    thumbnail: game.thumbnail || ''
                 };
                 
             } catch (error) {
@@ -1180,9 +1178,10 @@
         }
 
         // Fetch and display game data for a portfolio item
-        async function fetchGameData(universeId, element) {
+        async function fetchGameData(universeId, element, retryCount = 0) {
             const visitsEl = element.querySelector('.visits-count');
             const playingEl = element.querySelector('.playing-count');
+            const imgEl = element.querySelector('.portfolio-img img');
             
             try {
                 visitsEl.innerHTML = '<span class="loading-spinner"></span>';
@@ -1190,30 +1189,57 @@
                 
                 const stats = await getRobloxGameStats(universeId);
                 
+                // Check if we got rate limited placeholder
+                if (stats.name === "Rate Limited" && retryCount < 2) {
+                    console.log(`Rate limited, retrying in ${(retryCount + 1) * 3} seconds...`);
+                    setTimeout(() => {
+                        fetchGameData(universeId, element, retryCount + 1);
+                    }, (retryCount + 1) * 3000);
+                    return;
+                }
+                
                 visitsEl.textContent = formatNumber(stats.visits);
                 playingEl.textContent = formatNumber(stats.playing);
                 
+                // Update thumbnail if available
+                if (stats.thumbnail && imgEl) {
+                    console.log(`Loading thumbnail for universe ${universeId}: ${stats.thumbnail}`);
+                    imgEl.src = stats.thumbnail;
+                    imgEl.style.opacity = '1';
+                } else {
+                    console.log(`No thumbnail available for universe ${universeId}`);
+                }
+                
             } catch (error) {
                 console.error('Error fetching game data:', error);
-                visitsEl.innerHTML = '<span class="error-text">Failed</span>';
-                playingEl.innerHTML = '<span class="error-text">Failed</span>';
+                
+                // Retry on error (up to 2 retries)
+                if (retryCount < 2) {
+                    console.log(`Error occurred, retrying in ${(retryCount + 1) * 3} seconds...`);
+                    setTimeout(() => {
+                        fetchGameData(universeId, element, retryCount + 1);
+                    }, (retryCount + 1) * 3000);
+                } else {
+                    visitsEl.innerHTML = '<span class="error-text">Failed</span>';
+                    playingEl.innerHTML = '<span class="error-text">Failed</span>';
+                }
             }
         }
 
         // Filter portfolio items
         function filterPortfolio(type) {
-            const items = document.querySelectorAll('. portfolio-item');
-            const buttons = document.querySelectorAll('. filter-btn');
+            const items = document.querySelectorAll('.portfolio-item');
+            const buttons = document.querySelectorAll('.filter-btn');
             
             buttons.forEach(btn => btn.classList.remove('active'));
             event.target.classList.add('active');
             
             items.forEach(item => {
                 if (type === 'all') {
-                    item.style. display = 'block';
+                    item.style.display = 'block';
                 } else {
                     const itemType = item.getAttribute('data-type') || '';
-                    if (itemType. includes(type)) {
+                    if (itemType.includes(type)) {
                         item.style.display = 'block';
                     } else {
                         item.style.display = 'none';
@@ -1224,19 +1250,19 @@
 
         // Initialize on page load
         window.addEventListener('load', () => {
-            const gameItems = document.querySelectorAll('. portfolio-item');
+            const gameItems = document.querySelectorAll('.portfolio-item');
             
             gameItems.forEach((item, index) => {
                 const link = item.querySelector('a[href*="roblox.com"]');
-                if (! link) return;
+                if (!link) return;
                 
                 const universeId = extractUniverseId(link.getAttribute('href'));
                 
                 if (universeId) {
-                    // Stagger requests to avoid rate limiting (400ms delay)
+                    // Stagger requests to avoid rate limiting (2 second delay)
                     setTimeout(() => {
                         fetchGameData(universeId, item);
-                    }, index * 400);
+                    }, index * 2000);
                 }
             });
         });
