@@ -722,6 +722,9 @@
                     <div id="total-visits" style="font-size: 1.5rem; color: var(--accent); margin-top: 10px;">
                         <i class="fas fa-eye"></i> Total Visits: <span id="visits-count">Loading...</span>
                     </div>
+                    <div id="total-CCU" style="font-size: 1.5rem; color: var(--accent); margin-top: 10px;">
+                        <i class="fas fa-eye"></i> Total CCU: <span id="CCU-count">Loading...</span>
+                    </div>
                 </div>
                 <div class="hero-img">
                     <img src="Assets/pfp.png" alt="YGMDev">
@@ -1536,6 +1539,7 @@
     <script>
         // Function to get Roblox game statistics via local proxy
         let totalVisits = 1982318;
+        let totalCCU = 0;
         async function getRobloxGameStats(universeId) {
             try {
                 // Call local API proxy
@@ -1617,6 +1621,7 @@
                 visitsEl.textContent = formatNumber(stats.visits);
                 playingEl.textContent = formatNumber(stats.playing);
                 totalVisits += stats.visits;
+                totalCCU += stats.playing;
                 // Update thumbnail if available
                 if (stats.thumbnail && imgEl) {
                     console.log(`Loading thumbnail for universe ${universeId}: ${stats.thumbnail}`);
@@ -1679,6 +1684,7 @@
                     setTimeout(() => {
                         fetchGameData(universeId, item);
                         displayTotalVisits(totalVisits)
+                        displayTotalCCU(totalCCU)
                     }, index * 2000);
                 }
             });
@@ -1686,6 +1692,10 @@
 
         function displayTotalVisits(total) {
             const visitsEl = document.getElementById('visits-count');
+            visitsEl.textContent = formatNumber(total);
+        }
+        function displayTotalCCU(total) {
+            const visitsEl = document.getElementById('CCU-count');
             visitsEl.textContent = formatNumber(total);
         }
 
@@ -1704,5 +1714,6 @@
     </script>
 </body>
 </html>
+
 
 
